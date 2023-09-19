@@ -1,0 +1,142 @@
+﻿body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.input-container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-text {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.link-input[type="text"] {
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+    color: #333333;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.shine-button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background-color: #FF6060;
+    color: white;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+caption {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+table {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    width: 60%;
+    max-width: 800px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+th {
+    background-color: #FF6060;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tbody tr:nth-child(even) {
+    background: #FFE9E9;
+}
+/*h2 {
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+}
+
+.side {
+    padding: 70px;
+}
+
+.table {
+    display: inline-block;
+    overflow: scroll;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    border-top: 5px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-collapse: collapse;
+    outline: 3px solid #ff6060;
+    font-size: 15px;
+    background: #fff;
+    max-height:;
+}
+
+.table th {
+    font-weight: bold;
+    padding: 7px;
+    background: #ff6060;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ff6060;
+}
+
+.table td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #F0F0F0;
+}*/

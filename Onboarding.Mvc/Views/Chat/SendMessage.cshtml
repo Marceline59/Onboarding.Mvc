@@ -1,0 +1,34 @@
+﻿@model AnswerViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simpl</title>
+    <meta charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" href="/css/Style_of_SendMessage.css" asp-append-version="true">
+</head>
+<body>
+    <label class="message_block">Сообщение: @Model.SelectedChat?.Asked.Question</label>
+    <br>
+    @if (Model.SelectedChat.Id != Guid.Empty)
+    {
+        <h2>Отвечено: @Model.SelectedChat.Answer</h2>
+    }
+    else
+    {
+        <form method="post" asp-controller="Chat" asp-action="SendMessage" id="form">
+            <div class="items">
+                <div class="item">
+                    <label class="answer">Ответ</label>
+                    <input class="text-input" type="text" asp-for="SelectedChat.Answer">
+                    <span asp-validation-for="SelectedChat.Answer"></span>
+                </div>
+                <div>
+                    <input class="shine-button" type="submit" value="Отправить" />
+                </div>
+            </div>
+        </form>
+    }
+
+</body>
+</html>

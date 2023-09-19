@@ -1,0 +1,9 @@
+bin/
+obj/
+/Onboarding.Mvc/appsettings.json
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.vs/Onboarding.Mvc/.vs
+.vs/*
+/vs./

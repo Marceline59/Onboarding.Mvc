@@ -1,0 +1,51 @@
+﻿@model Onboarding.Mvc.View_Models.RegisterViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simpl</title>
+    <meta charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" href="~/css/SignIn.css">
+</head>
+<body>
+
+    <div class="header_message">МЫ ОБОЖАЕМ СИМПЛ</div>
+    <div class="login">
+        <form method="post" asp-controller="Account" asp-action="SignIn" id="form">
+            <div class="choose">
+                <h1 class="title">SIMPL АВТОРИЗАЦИЯ</h1>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <label for="login">Почта</label>
+                    <input type="text" asp-for="Email">
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="item">
+                    <label for="password">Пароль</label>
+                    <input type="password" asp-for="Password">
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Войти" />
+                </div>
+                <br>
+                <font color="#FF0000">@Model.Error</font> <br>
+                <a href="https://simpl-group.ru/">Сайт Simpl</a>
+                <br>
+                <p>
+                    По всем вопросам звоните по телефону +7 (342) 256-31-52 или пишите на почту info@prg-it.ru. Технопарк Morion Digital шоссе Космонавтов 111 к. 43.
+                </p>
+            </div>
+        </form>
+    </div>
+    <div class="footer-box">
+        <h4 class="footer-textik">
+            ©2023. Все права защищены. Этот сайт предназначен исключительно для администрирования бота.
+        </h4>
+    </div>
+</body>
+</html>

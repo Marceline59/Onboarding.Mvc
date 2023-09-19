@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simpl</title>
+    <meta charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" href="~/css/Style_of_Layout.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" asp-controller="Account" asp-action="Out">Выход</a>
+        <a asp-controller="Account" asp-action="HRAdd">HR</a>
+        <a asp-controller="Chat" asp-action="SharedChat">Чаты</a>
+        <a asp-controller="Survey" asp-action ="SurvPage">Опросы</a>
+    </div>
+    @RenderBody()
+    <div class="footer-box">
+        <h4 class="footer-textik">
+            ©2023. Все права защищены. Этот сайт предназначен исключительно для администрирования бота.
+        </h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model SurveyViewModel
+<link rel="stylesheet" href="/css/Style_of_SurvPage.css">
+<body>
+    <h1>Опросы</h1>
+    <form method="post" asp-controller="Survey" asp-action="SurvPage">
+        <div class="input-container">
+            <label class="link-text" for="login">Введите ссылку на опрос: </label>
+            <input class="link-input" type="text" asp-for="ActiveLink">
+            <span asp-validation-for="ActiveLink"></span>
+            <input class="shine-button" type="submit" value="Отправить" />
+        </div>
+    </form>
+    <div class="side">
+        <table class="table">
+            <caption>Предыдущие опросы</caption>
+            <thead>
+                <tr>
+                    <!-- <th></th> -->
+                    <th>Ссылка</th>
+                    <th>Дата создания</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.PreviousSurveys)
+                {
+                    <tr>
+                        <!-- <td>Link</td> -->
+                        <td>@item.Link</td>
+                        <td>@item.CreatedAt</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>

@@ -1,0 +1,35 @@
+﻿@model AddHRViewModel
+<link type="text/css" rel="stylesheet" href="~/css/Style_of_HRAdd.css" asp-append-version="true" />
+<body>
+    <form method="post" asp-controller="Account" asp-action="HRAdd">
+        <h1>Добавление HR</h1>
+        <div class="input-container">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="text-field">
+                <label class="text-field__label" asp-for="Email">Email</label><br />
+                <input class="text-field__input" asp-for="Email" placeholder="Email">
+                <div class="text-field__counter"></div>
+            </div>
+            <div class="text-field">
+                <label class="text-field__label" asp-for="Password">Password</label><br />
+                <input class="text-field__input" asp-for="Password" type="password" placeholder="Password">
+            </div>
+            <input class="shine-button" type="submit" value="Добавить" />
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                    <th>Email</th>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.ListUsers)
+                    {
+                        <tr>
+                            <td>@item</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>

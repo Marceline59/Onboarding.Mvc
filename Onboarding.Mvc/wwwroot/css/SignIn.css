@@ -1,0 +1,323 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '; content: none;
+    }
+
+</style >
+<style type="text/css" >
+.clear {
+    clear: both;
+}
+
+body {
+    font: 12px 'PT Sans Caption', Verdana, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    background-color: white;
+}
+
+b {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+h3 {
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+h3 {
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*стили ссылок */
+a {
+    color: #396383;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+/* форма авторизации */
+.login {
+    height: 100%;
+}
+
+    .login .field {
+        margin-left: 5px;
+    }
+
+    .login .submit {
+    }
+
+.cpt_list {
+    margin-bottom: 0.5em;
+}
+
+    .cpt_list ul {
+        padding-left: 3em;
+        list-style-type: disc;
+    }
+
+    .cpt_list li {
+    }
+
+    .cpt_list .cpt_num {
+        font-weight: bold;
+    }
+
+/* кнопки */
+.button_blue button::-moz-focus-inner {
+    border: 0;
+}
+
+.login {
+    padding-top: 100px;
+    position: relative;
+    width: 800px;
+    margin: 80px auto 300px auto;
+    background: #fff;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    padding-bottom: 20px;
+}
+
+    .login .choose {
+        padding: 1em 2em 1.5em 2em;
+        border-bottom: 1px dashed #606060;
+        padding-bottom: 10px;
+        background-color: #FF7070;
+        border-radius: 25px 25px 0 0;
+        -moz-border-radius: 15px 15px 0 0;
+    }
+
+        .login .choose .title {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 35%;
+        }
+
+    .login .items {
+        padding: 0 2em 1em 2em;
+    }
+
+        .login .items .item,
+        .login .items .checkbox {
+            margin: 1em 0 0 0;
+        }
+
+            .login .items .item label {
+                display: block;
+                margin: 0 0 0.2em 0;
+                color: #8f8f8f;
+            }
+
+            .login .items .checkbox label {
+                margin: 0 0 0.2em 0;
+                color: #8f8f8f;
+            }
+
+            .login .items .item input {
+                display: block;
+                width: 100%;
+                text-indent: 5px;
+                border: 1px solid #e8e8e8;
+                box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.3);
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                padding: 0;
+            }
+
+    .login:before,
+    .login:after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        height: 20%;
+        max-width: 300px;
+        -webkit-box-shadow: 0 15px 10px rgba(150, 150, 150, 0.7);
+        -moz-box-shadow: 0 15px 10px rgba(150, 150, 150, 0.7);
+        box-shadow: 0 15px 10px rgba(150, 150, 150, 0.7);
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+
+    .login:after {
+        right: 10px;
+        left: auto;
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+
+
+.button, .button span {
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 8px;
+}
+
+.button {
+    font-size: 14px;
+    font-family: 'PT Sans Caption';
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    white-space: nowrap;
+    line-height: 1em;
+    position: relative;
+    outline: none;
+    overflow: visible; /* removes extra side padding in IE */
+    cursor: pointer;
+    border: 1px solid #999; /* IE */
+    border: rgba(0, 0, 0, .2) 1px solid; /* Saf4+, Chrome, FF3.6 */
+    border-bottom: rgba(0, 0, 0, .4) 1px solid;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background: -moz-linear-gradient( center top, rgba(255, 255, 255, .1) 0%, rgba(0, 0, 0, .1) 100% ); /* FF3.6 */
+    background: -webkit-gradient( linear, center bottom, center top, from(rgba(0, 0, 0, .1)), to(rgba(255, 255, 255, .1)) ); /* Saf4+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000')"; /* IE8 */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+    .button.full, .button.full span {
+        display: block;
+    }
+
+    .button:hover, .button.hover {
+        background: -moz-linear-gradient( center top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, .1) 100% ); /* FF3.6 */
+        background: -webkit-gradient( linear, center bottom, center top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .2)) ); /* Saf4+, Chrome */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF'); /* IE6,IE7 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF')"; /* IE8 */
+    }
+
+    .button span {
+        position: relative;
+        color: #fff;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        border-top: rgba(255, 255, 255, .2) 1px solid;
+        padding: 0.6em 1.3em;
+        line-height: 1em;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .button.medium span {
+        font-size: 14px;
+    }
+
+    .button.red {
+        background-color: #FF9090;
+    }
+
+.text p {
+    text-align: justify;
+    line-height: 19px;
+    text-indent: 25px;
+}
+
+.text h2 {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    text-indent: 25px;
+}
+
+.header_message {
+    text-align: center;
+    background-color: #FF6060;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+    .header_message a {
+        color: white;
+    }
+
+.footer-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer-textik {
+    font-size: 14px;
+    text-align: center;
+}
+
+a {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}

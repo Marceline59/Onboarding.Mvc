@@ -1,0 +1,33 @@
+﻿@model AnswerViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simpl</title>
+    <meta charset="UTF-8">
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="stylesheet" href="/css/Style_of_ListUsers.css" asp-append-version="true">
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>UserID</th>
+                <th>Question</th>
+                <th>Message</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (HrAnswer item in Model.Chats)
+            {
+                <tr>
+                    <td><label>@item.Asked.Nickname</label></td>
+                    <td><label>@item.Asked.Question</label></td>
+                    <td>@Html.ActionLink("Сообщение","Selecting","Chat",new {userId=item.Asked.UserId,  item.Asked.Question},null)</td>
+                    <td><label>@(item.Id==Guid.Empty?"Ожидает":"Отвечено")</label></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

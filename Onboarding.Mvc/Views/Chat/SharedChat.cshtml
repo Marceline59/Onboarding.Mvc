@@ -1,0 +1,13 @@
+﻿@model AnswerViewModel
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="LeftSide">
+        @await Html.PartialAsync("ListUsers", Model)
+    </div>
+    <div class="RightSide">
+        @if (Model.SelectedChat != null)
+        {
+            @await Html.PartialAsync("SendMessage", Model)
+        }
+    </div>
+</body>
